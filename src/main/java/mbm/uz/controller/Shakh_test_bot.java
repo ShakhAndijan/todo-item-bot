@@ -108,12 +108,12 @@ public class Shakh_test_bot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "shakh_test_bot";
+        return "todo_item_bot";
     }
 
     @Override
     public String getBotToken() {
-        return "1663430373:AAEBGIC5oHicA1XRD-sX1NRQlXa9WBITmxw";
+        return "1759593369:AAHtURePBPQsTcJ6UqwPCp8Ti0_cE_MYHfk";
     }
 
 

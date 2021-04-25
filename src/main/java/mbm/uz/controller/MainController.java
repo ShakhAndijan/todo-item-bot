@@ -25,7 +25,7 @@ public class MainController {
         if (text.equals("/start")) {
 
             sendMessage.setText("Assalamu alaykum \n" +
-                    "Qilinadigan ishlaringiz ro'yhatini joylab borishingiz mumkin");
+                    "ToDo Item bot sizning xizmatingizga tayyor!!!");
             sendMessage.setParseMode("Markdown");
 
             InlineKeyboardButton menuButton = InlineButtonUtil.button("Goto Menu", "menu");
@@ -40,23 +40,23 @@ public class MainController {
 
         } else if (text.equals("/help")) {
 
-            String messages = "Botmizga yordam keremi\n Unda ushbu vidyoni yaxshilab koring. Agar tushunmasez yana korvorarsiz aaa...!!!";
+            String messages = "Yordam Bo'limi.\n Botning vazifasini tushuntirib beruvchi video...";
             sendMessage.setText(messages);
             sendMessage.setParseMode("Markdown");
             sendMessage = sendMessage.disableWebPagePreview();
-
-            SendPhoto sendPhoto = new SendPhoto();
-            sendPhoto.setPhoto("AgACAgIAAxkBAAMjYIAAAZlQ6dLzmgcDaMz8P0stSrcSAAKNszEbzusBSENJ0jtpXcBSN9gMpC4AAwEAAwIAA20AA5MxAAIfBA");
-            sendPhoto.setChatId(chatId);
-            sendPhoto.setCaption("Loyiha asoschisi");
-            sendPhoto.setParseMode("MARKDOWN");
-
-            codeMessage.setSendPhoto(sendPhoto);
+//
+//            SendPhoto sendPhoto = new SendPhoto();
+//            sendPhoto.setPhoto("AgACAgIAAxkBAAMjYIAAAZlQ6dLzmgcDaMz8P0stSrcSAAKNszEbzusBSENJ0jtpXcBSN9gMpC4AAwEAAwIAA20AA5MxAAIfBA");
+//            sendPhoto.setChatId(chatId);
+//            sendPhoto.setCaption("Loyiha asoschisi");
+//            sendPhoto.setParseMode("MARKDOWN");
+//
+//            codeMessage.setSendPhoto(sendPhoto);
 
             SendVideo sendVideo = new SendVideo();
-            sendVideo.setVideo("BAACAgIAAxkBAAMZYH_9wYJ2L0khpPMpUcPeX4CsapoAAhUMAALO6wFICPlTzGyRJqgfBA");
+            sendVideo.setVideo("BAACAgIAAxkBAAICNWCFR8DvDn2fLYdP-bqvONrazaXdAAJhCgACXQUpSJHHpcfnDHHnHwQ");
             sendVideo.setChatId(chatId);
-            sendVideo.setCaption("Video sizga yordam beradi");
+            sendVideo.setCaption("Botning vazifasini...");
             sendVideo.setParseMode("HTML");
 
             codeMessage.setSendVideo(sendVideo);
@@ -64,7 +64,7 @@ public class MainController {
             codeMessage.setSendMessage(sendMessage);
             codeMessage.setCodeMessageType(CodeMessageType.MESSAGE_VIDEO_PHOTO);
         } else if (text.equals("/setting")) {
-            sendMessage.setText("aka damni olib turiga");
+            sendMessage.setText("ERROR \n Page not found 404");
             sendMessage.setParseMode("Markdown");
             codeMessage.setCodeMessageType(CodeMessageType.MESSAGE);
         } else if (text.equals("menu")) {
